@@ -2,10 +2,19 @@
 <html>
   <head>
     <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel="stylesheet" href="/stylesheets/style.css" />
   </head>
   <body>
     <h1><%= title %></h1>
     <p>Welcome to <%= title %></p>
+    <div class="messages-container">
+      <% messages.forEach(message => { %>
+      <div class="message-card">
+        <h2 class="message-card-title"><%=message.user %></h2>
+        <p class="message-card-content"><%= message.text%></p>
+        <footer class="message-card-footer"><%= message.added%></footer>
+      </div>
+      <% })%>
+    </div>
   </body>
 </html>
