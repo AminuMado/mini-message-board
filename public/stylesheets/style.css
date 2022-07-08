@@ -4,5 +4,41 @@ body {
 }
 
 a {
-  color: #00B7FF;
+  color: #00b7ff;
+}
+.messages-container {
+  margin: 5px;
+  padding: 5px;
+}
+.message-card,
+.form-container {
+  max-width: 70rem;
+  margin: auto;
+  margin-bottom: 5rem;
+  border-radius: 0.8rem;
+  padding: 3rem 4rem 2rem;
+  background: white;
+  margin-bottom: 20px;
+  box-shadow: 0 3px 7px #00577759;
+  padding: 10px;
+  border-radius: 5px;
+  transition: 0.2s ease;
+  position: relative;
+  left: 0;
+  font-size: 1.5em;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  margin: 15px;
+}
+input {
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: 1px solid #dbdbdb;
+
+  margin-bottom: 15px;
+  transition: 0.2s ease;
 }
